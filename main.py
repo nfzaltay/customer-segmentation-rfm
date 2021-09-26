@@ -10,6 +10,7 @@
 # retain customers that are very profitable for the company.
 
 # Dataset resource : https://archive.ics.uci.edu/ml/datasets/Online+Retail
+
 # InvoiceNo – Fatura Numarası (Eğer bu kod C ile başlıyorsa işlemin iptal edildiğini ifade eder.)
 # StockCode – Ürün kodu (Her bir ürün için eşsiz numara.)
 # Description – Ürün ismi
@@ -32,7 +33,8 @@ pd.set_option('display.float_format', lambda x: '%.5f' % x)
 warnings.simplefilter(action="ignore", category=SettingWithCopyWarning)
 
 # Read the 2010-2011 data in the Online Retail II excel.
-sales = pd.read_excel(r"/Users/naltay/Library/Mobile Documents/com~apple~CloudDocs/DATA SCIENCE/DSMLBC/data/online_retail_II.xlsx", sheet_name="Year 2010-2011")
+sales = pd.read_excel(r"/data/online_retail_II.xlsx", sheet_name="Year 2010-2011")
+# Dataset resource : https://archive.ics.uci.edu/ml/datasets/Online+Retail
 
 ##########################
 # Understanding and Preparing Data
